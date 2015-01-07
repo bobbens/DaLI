@@ -1,0 +1,6 @@
+*.o
+*.mex
+*.mexa64
+latex
+test
+dali.pdf
