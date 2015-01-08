@@ -8,9 +8,17 @@ OVERVIEW
 This code provides an implementation of the research paper:
 
 ```
-  DaLI: Deformation and Light Invariant Descriptor
   Edgar Simo-Serra, Carme Torras, Francesc Moreno-Noguer
+  DaLI: Deformation and Light Invariant Descriptor
   International Journal of Computer Vision (IJCV), 2015
+```
+
+Which was originally published in
+
+```
+   F.Moreno-Noguer
+   Deformation and Illumination Invariant Feature Point Descriptor
+   Conference in Computer Vision and Pattern Recognition (CVPR), 2011
 ```
 
 This allows local representation of image patches in such a way that they can be compared with strong invariance to both deformation and illumination.
