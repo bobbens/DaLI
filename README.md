@@ -129,8 +129,8 @@ If you use this code please cite:
  @Article{SimoSerraIJCV2015,
     author = {Edgar Simo-Serra and Carme Torras and Francesc Moreno Noguer},
     title = {{DaLI: Deformation and Light Invariant Descriptor}},
-    journal = {International Journal of Computer Vision (IJCV)} volume = {1},
-    pages = {1--1},
+    journal = {International Journal of Computer Vision (IJCV)},
+    pages = {1--19},
     year = 2015,
  }
 ```
