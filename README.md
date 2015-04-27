@@ -2,7 +2,7 @@ DaLI: Deformation and Light Invariant Descriptor
 ================================================
 
 
-OVERVIEW
+Overview
 --------
 
 This code provides an implementation of the research paper:
@@ -51,7 +51,7 @@ License
 Installation
 ------------
 
-The software depends on the [ceigs library](https://github.com/bobbens/ceigs) which provides an elegant C frontend to the [ARPACK library](http://www.caam.rice.edu/software/ARPACK/). Upon installing the ceigs library it should be possible to compile both the test application and the matlab/octave by simpling running make:
+The software depends on the [ceigs library](https://github.com/bobbens/ceigs) which provides an elegant C frontend to the [ARPACK library](http://www.caam.rice.edu/software/ARPACK/) and the FFTW3 library (libfftw3-dev). Upon these libraries it should be possible to compile both the test application and the matlab/octave by simpling running make:
 
 ```
 $ make
@@ -138,7 +138,7 @@ If you use this code please cite:
 Known Issues
 ------------
 
-Currently it is not possible to run in matlab due to library conflict issues. However, it is possible to run it in octave or integrate it into any C application.
+Currently it is not possible to run in matlab due to library conflict issues (more specifically the system ATLAS library that the DaLI descriptor is linked to conflicts with the ATLAS library that is provided by Matlab). However, it is possible to run it in octave or integrate it into any C application.
 
 
 Changelog
