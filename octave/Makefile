@@ -4,11 +4,13 @@
 CFLAGS	:= -g -DHAVE_PTHREADS=0
 LDFLAGS	:= -lm -lceigs -larpack -lcxsparse -lumfpack -lfftw3 -lvl
 
-.PHONY: all octave clean
+.PHONY: all octave matlab clean
 
 all: octave
 
-octave: dali_compute.mexa64 dali_distance.mexa64 dali_compute.mex dali_distance.mex
+octave: dali_compute.mex dali_distance.mex
+
+matlab: dali_compute.mexa64 dali_distance.mexa64
 
 dali_compute.mexa64: ../dali.h ../dali.c ../dali_mesh.c dali_compute.c
 	CFLAGS="$(CFLAGS)" mex -g -I.. $(LDFLAGS) dali_compute.c ../dali.c ../dali_mesh.c
